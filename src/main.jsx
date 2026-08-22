@@ -152,6 +152,13 @@ function App() {
   return (
     <div className="site-shell">
       <header className="site-header">
+        <a
+          className="mobile-brand-link"
+          href="/"
+          onClick={(event) => handleNavLink(event, '/')}
+        >
+          Thinking Alongside Machines
+        </a>
         <button
           className="mobile-menu-toggle"
           type="button"
