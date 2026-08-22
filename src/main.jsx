@@ -532,13 +532,6 @@ function YouTubePage() {
           where human judgement still matters.
         </p>
         <p>If you&apos;re interested in understanding AI more clearly, this channel is for you.</p>
-        <p>
-          Created by Ovidiu Dulacioiu
-          <br />
-          Author of Thinking Alongside Machines: AI, Agency, and the Limits of Control
-          <br />
-          Founder of TIMEFLUX - AI-powered time tracking and billing for law firms
-        </p>
         <a
           className="primary-action inline-link"
           href="https://www.youtube.com/@ThinkingAlongsideMachines"
