@@ -550,8 +550,8 @@ function TimefluxPage() {
   return (
     <section className="content-page timeflux-layout">
       <article className="page-copy standard-copy">
-        <p className="eyebrow">The App</p>
         <img className="timeflux-logo" src="/assets/timeflux-logo.png" alt="TIMEFLUX logo" />
+        <p className="eyebrow">The App</p>
         <h1>AI applied where it belongs</h1>
         <p>
           TIMEFLUX is where I put the ideas from Thinking Alongside Machines into practice. It is
