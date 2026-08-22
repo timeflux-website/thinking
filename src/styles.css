@@ -45,7 +45,7 @@ button {
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 24px;
   padding: 18px clamp(18px, 4vw, 56px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.09);
@@ -53,34 +53,11 @@ button {
   backdrop-filter: blur(18px);
 }
 
-.brand-link,
 .nav-link {
   border: 0;
   color: inherit;
   background: transparent;
   text-decoration: none;
-}
-
-.brand-link {
-  display: inline-flex;
-  align-items: center;
-  padding: 0;
-  font-weight: 800;
-}
-
-.brand-mark {
-  display: inline-flex;
-  min-width: 42px;
-  height: 42px;
-  align-items: center;
-  justify-content: center;
-  padding: 0 14px;
-  border: 1px solid rgba(247, 181, 56, 0.42);
-  border-radius: 8px;
-  background: rgba(247, 181, 56, 0.12);
-  color: #fff;
-  font-size: 1rem;
-  letter-spacing: 0;
 }
 
 .main-nav {
@@ -91,6 +68,17 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.05);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
 }
 
 .nav-link {
@@ -527,17 +515,36 @@ h1 {
 
 @media (max-width: 760px) {
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: flex-end;
+    padding: 14px 18px;
+  }
+
+  .mobile-menu-toggle {
+    display: grid;
   }
 
   .main-nav {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 18px;
+    display: none;
     width: 100%;
-    overflow-x: auto;
+    max-width: min(320px, calc(100vw - 36px));
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 8px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.38);
+  }
+
+  .main-nav.open {
+    display: flex;
   }
 
   .nav-link {
-    flex: 1 0 auto;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 42px;
   }
 
   .book-facts {
@@ -551,10 +558,6 @@ h1 {
 }
 
 @media (max-width: 520px) {
-  .brand-mark {
-    font-size: 0.95rem;
-  }
-
   .home-actions,
   .primary-action,
   .secondary-action,

@@ -6,8 +6,10 @@ import {
   ChevronRight,
   ExternalLink,
   Mail,
+  Menu,
   PlayCircle,
   Sparkles,
+  X,
 } from 'lucide-react';
 import './styles.css';
 
@@ -136,18 +138,30 @@ function useRoute() {
 function App() {
   const { path, navigate } = useRoute();
   const activeMetadata = pageMetadata[path] || pageMetadata['/'];
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   React.useEffect(() => {
     setDocumentMetadata(path, activeMetadata);
   }, [path, activeMetadata]);
 
+  const handleNavLink = (event, nextPath) => {
+    handleInternalLink(event, nextPath, navigate);
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="site-shell">
       <header className="site-header">
-        <a className="brand-link" href="/" onClick={(event) => handleInternalLink(event, '/', navigate)}>
-          <span className="brand-mark">Thinking Alongside Machines</span>
-        </a>
-        <nav className="main-nav" aria-label="Main navigation">
+        <button
+          className="mobile-menu-toggle"
+          type="button"
+          aria-expanded={isMenuOpen}
+          aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          onClick={() => setIsMenuOpen((current) => !current)}
+        >
+          {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
+        <nav className={isMenuOpen ? 'main-nav open' : 'main-nav'} aria-label="Main navigation">
           {navItems.map((item) => (
             <a
               className={
@@ -157,7 +171,7 @@ function App() {
               }
               href={item.path}
               key={item.path}
-              onClick={(event) => handleInternalLink(event, item.path, navigate)}
+              onClick={(event) => handleNavLink(event, item.path)}
             >
               {item.label}
             </a>
