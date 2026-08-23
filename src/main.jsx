@@ -619,8 +619,8 @@ function ContactPage() {
             alt="Ovidiu Dulacioiu"
           />
           <div>
-            <p className="eyebrow">Contact</p>
-            <h1>Contact Ovidiu Dulacioiu</h1>
+            <h1>Reach out</h1>
+            <p className="eyebrow contact-eyebrow">Contact Ovidiu Dulacioiu</p>
           </div>
         </div>
         <p>
