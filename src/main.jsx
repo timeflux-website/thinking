@@ -550,9 +550,13 @@ function TimefluxPage() {
   return (
     <section className="content-page timeflux-layout">
       <article className="page-copy standard-copy">
-        <img className="timeflux-logo" src="/assets/timeflux-logo.png" alt="TIMEFLUX logo" />
-        <p className="eyebrow">The App</p>
-        <h1>AI applied where it belongs</h1>
+        <div className="page-identity">
+          <img className="timeflux-cube-logo" src="/assets/timeflux-cube-logo.png" alt="TIMEFLUX logo" />
+          <div>
+            <p className="eyebrow">The App</p>
+            <h1>TIMEFLUX</h1>
+          </div>
+        </div>
         <p>
           TIMEFLUX is where I put the ideas from Thinking Alongside Machines into practice. It is
           not built around AI for the sake of AI. It uses AI in context: to support legal
