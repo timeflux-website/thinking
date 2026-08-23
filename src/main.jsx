@@ -551,7 +551,13 @@ function TimefluxPage() {
     <section className="content-page timeflux-layout">
       <article className="page-copy standard-copy">
         <div className="page-identity">
-          <img className="timeflux-cube-logo" src="/assets/timeflux-cube-logo.png" alt="TIMEFLUX logo" />
+          <span className="timeflux-cube-frame">
+            <img
+              className="timeflux-cube-logo"
+              src="/assets/timeflux-cube-logo.png"
+              alt="TIMEFLUX logo"
+            />
+          </span>
           <div>
             <p className="eyebrow">The App</p>
             <h1>TIMEFLUX</h1>
