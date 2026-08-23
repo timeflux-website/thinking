@@ -7,15 +7,15 @@ const templatePath = path.join(distDir, 'index.html');
 
 const routes = {
   '/': {
-    title: 'Thinking Alongside Machines | Ovidiu Dulăcioiu',
+    title: 'Thinking Alongside Machines | Ovidiu Dulacioiu',
     description:
-      'Ovidiu Dulăcioiu personal website: practical AI, human agency, Thinking Alongside Machines, the YouTube channel, and TIMEFLUX.',
+      'Ovidiu Dulacioiu personal website: practical AI, human agency, Thinking Alongside Machines, the YouTube channel, and TIMEFLUX.',
     type: 'website',
   },
   '/book': {
     title: 'Thinking Alongside Machines Book | AI, Agency, and Control',
     description:
-      'Thinking Alongside Machines by Ovidiu Dulăcioiu explores practical AI, decision-making, system design, human agency, risk, value, and control beyond hype and fear.',
+      'Thinking Alongside Machines by Ovidiu Dulacioiu explores practical AI, decision-making, system design, human agency, risk, value, and control beyond hype and fear.',
     type: 'article',
     schemaType: 'Book',
   },
@@ -28,14 +28,14 @@ const routes = {
   '/timeflux': {
     title: 'TIMEFLUX | Practical Human-in-the-loop AI for Legal Work',
     description:
-      'TIMEFLUX is Ovidiu Dulăcioiu’s AI-enabled legal technology app for time tracking, fee and task management, planning, reporting, and case-to-invoice workflows.',
+      'TIMEFLUX is Ovidiu Dulacioiu’s AI-enabled legal technology app for time tracking, fee and task management, planning, reporting, and case-to-invoice workflows.',
     type: 'article',
     schemaType: 'SoftwareApplication',
   },
   '/contact': {
-    title: 'Contact Ovidiu Dulăcioiu | Thinking Alongside Machines',
+    title: 'Contact Ovidiu Dulacioiu | Thinking Alongside Machines',
     description:
-      'Contact Ovidiu Dulăcioiu and find links to LinkedIn, X, the Amazon author page, Thinking Alongside Machines, practical AI work, and TIMEFLUX.',
+      'Contact Ovidiu Dulacioiu and find links to LinkedIn, X, the Amazon author page, Thinking Alongside Machines, practical AI work, and TIMEFLUX.',
     type: 'article',
   },
 };
@@ -55,8 +55,8 @@ function canonicalUrl(route) {
 function person() {
   return {
     '@type': 'Person',
-    name: 'Ovidiu Dulăcioiu',
-    alternateName: 'Ovidiu Dulacioiu',
+    name: 'Ovidiu Dulacioiu',
+    alternateName: 'Ovidiu Dulăcioiu',
     url: siteUrl,
     sameAs: [
       'https://www.linkedin.com/in/ovidiu-dulacioiu/',
@@ -113,7 +113,7 @@ function metadataHead(route, metadata) {
   const url = canonicalUrl(route);
   return `<title>${escapeHtml(metadata.title)}</title>
     <meta name="description" content="${escapeHtml(metadata.description)}" />
-    <meta name="author" content="Ovidiu Dulăcioiu" />
+    <meta name="author" content="Ovidiu Dulacioiu" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="${url}" />
     <meta property="og:site_name" content="Thinking Alongside Machines" />
