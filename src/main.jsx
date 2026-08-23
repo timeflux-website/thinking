@@ -343,7 +343,7 @@ function HomePage({ navigate }) {
     <section className="home-page">
       <div className="ambient-grid" aria-hidden="true" />
       <div className="home-content">
-        <p className="eyebrow">Ovidiu Dulacioiu</p>
+        <p className="eyebrow home-eyebrow">Ovidiu Dulacioiu</p>
         <h1>Thinking Alongside Machines</h1>
         <p className="lead">
           A personal hub for practical AI: the book where I explore agency and control, the channel
@@ -620,7 +620,7 @@ function ContactPage() {
           />
           <div>
             <p className="eyebrow">Contact</p>
-            <h1>Say hello</h1>
+            <h1>Contact Ovidiu Dulacioiu</h1>
           </div>
         </div>
         <p>

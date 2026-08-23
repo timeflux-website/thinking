@@ -139,6 +139,10 @@ button {
   text-transform: uppercase;
 }
 
+.home-eyebrow {
+  font-size: 0.96rem;
+}
+
 h1 {
   margin: 0;
   font-size: clamp(2.2rem, 5.4vw, 4.6rem);
