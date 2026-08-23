@@ -25,14 +25,14 @@ const siteUrl = 'https://thinkingalongsidemachines.com';
 
 const pageMetadata = {
   '/': {
-    title: 'Thinking Alongside Machines | Ovidiu Dulăcioiu',
+    title: 'Thinking Alongside Machines | Ovidiu Dulacioiu',
     description:
-      'Ovidiu Dulăcioiu personal website: practical AI, human agency, Thinking Alongside Machines, the YouTube channel, and TIMEFLUX.',
+      'Ovidiu Dulacioiu personal website: practical AI, human agency, Thinking Alongside Machines, the YouTube channel, and TIMEFLUX.',
   },
   '/book': {
     title: 'Thinking Alongside Machines Book | AI, Agency, and Control',
     description:
-      'Thinking Alongside Machines by Ovidiu Dulăcioiu explores practical AI, decision-making, system design, human agency, risk, value, and control beyond hype and fear.',
+      'Thinking Alongside Machines by Ovidiu Dulacioiu explores practical AI, decision-making, system design, human agency, risk, value, and control beyond hype and fear.',
   },
   '/youtube': {
     title: 'Thinking Alongside Machines YouTube Channel | Practical AI Beyond the Noise',
@@ -42,12 +42,12 @@ const pageMetadata = {
   '/timeflux': {
     title: 'TIMEFLUX | Practical Human-in-the-loop AI for Legal Work',
     description:
-      'TIMEFLUX is Ovidiu Dulăcioiu’s AI-enabled legal technology app for time tracking, fee and task management, planning, reporting, and case-to-invoice workflows.',
+      'TIMEFLUX is Ovidiu Dulacioiu’s AI-enabled legal technology app for time tracking, fee and task management, planning, reporting, and case-to-invoice workflows.',
   },
   '/contact': {
-    title: 'Contact Ovidiu Dulăcioiu | Thinking Alongside Machines',
+    title: 'Contact Ovidiu Dulacioiu | Thinking Alongside Machines',
     description:
-      'Contact Ovidiu Dulăcioiu and find links to LinkedIn, X, the Amazon author page, Thinking Alongside Machines, practical AI work, and TIMEFLUX.',
+      'Contact Ovidiu Dulacioiu and find links to LinkedIn, X, the Amazon author page, Thinking Alongside Machines, practical AI work, and TIMEFLUX.',
   },
 };
 
@@ -210,7 +210,7 @@ function setDocumentMetadata(path, metadata) {
 
   document.title = metadata.title;
   upsertMeta('name', 'description', metadata.description);
-  upsertMeta('name', 'author', 'Ovidiu Dulăcioiu');
+  upsertMeta('name', 'author', 'Ovidiu Dulacioiu');
   upsertMeta('name', 'robots', 'index, follow');
   upsertMeta('property', 'og:site_name', 'Thinking Alongside Machines');
   upsertMeta('property', 'og:title', metadata.title);
@@ -264,8 +264,8 @@ function upsertJsonLd(path, metadata, url) {
 function getStructuredData(path, metadata, url) {
   const person = {
     '@type': 'Person',
-    name: 'Ovidiu Dulăcioiu',
-    alternateName: 'Ovidiu Dulacioiu',
+    name: 'Ovidiu Dulacioiu',
+    alternateName: 'Ovidiu Dulăcioiu',
     url: siteUrl,
     sameAs: [
       'https://www.linkedin.com/in/ovidiu-dulacioiu/',
