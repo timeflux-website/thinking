@@ -653,15 +653,6 @@ function ContactPage() {
           </a>
           <a
             className="secondary-action social-link"
-            href="https://x.com/ovi_timeflux"
-            rel="noreferrer"
-            target="_blank"
-          >
-            X
-            <ExternalLink size={16} />
-          </a>
-          <a
-            className="secondary-action social-link"
             href="https://www.amazon.co.uk/stores/author/B0D2WG7RZ7"
             rel="noreferrer"
             target="_blank"
